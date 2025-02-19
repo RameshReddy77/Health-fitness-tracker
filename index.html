@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health and Fitness Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Health and Fitness Tracker</h1>
+  </header>
+
+  <main>
+    <section class="bmi-calculator">
+      <h2>BMI Calculator</h2>
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" placeholder="Enter your weight">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" placeholder="Enter your height">
+      <button id="calculate-bmi">Calculate BMI</button>
+      <p id="bmi-result"></p>
+    </section>
+
+    <section class="activity-log">
+      <h2>Activity Log</h2>
+      <input type="text" id="activity-input" placeholder="Enter activity (e.g., Jogging 5km)">
+      <button id="add-activity">Add Activity</button>
+      <ul id="activity-list"></ul>
+    </section>
+
+    <section class="progress-tracker">
+      <h2>Progress Tracker</h2>
+      <canvas id="progress-chart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
